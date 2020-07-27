@@ -1,0 +1,22 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<h1> welcome {{name}}</h1>
+<form action="add" method="post">
+    {% csrf_token %}
+    <input type="text" name="nam1"><br>
+    <input type="text" name="nam2"><br>
+    <button type="submit">add</button>
+</form>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
